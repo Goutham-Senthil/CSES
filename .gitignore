@@ -2,3 +2,4 @@
 *.iik
 *.pdb
 .vscode/
+tests/
