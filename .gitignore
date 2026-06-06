@@ -1,3 +1,4 @@
 *.exe
 *.iik
 *.pdb
+.vscode/
