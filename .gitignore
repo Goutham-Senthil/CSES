@@ -1,6 +1,7 @@
 *.exe
-*.iik
+*.ilk
 *.pdb
+*.obj
 .vscode/
 tests/
 tests.zip
