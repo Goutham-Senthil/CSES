@@ -7,10 +7,9 @@ def run_tests():
 
 def main():
     
-
     # number of test cases
-    n = int(input())
-    for _ in range(n):
+    t = int(input())
+    for _ in range(t):
         run_tests()
 
 if __name__ == "__main__":
