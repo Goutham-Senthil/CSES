@@ -17,6 +17,7 @@ void run_tests()
     {
         cout<<"NO\n";
     }
+    return ;
 }
 
 int main(){
