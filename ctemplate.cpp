@@ -4,7 +4,7 @@ using namespace std;
 
 void run_tests()
 {
-    ;
+    return ;
 }
 
 int main(){
