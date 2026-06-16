@@ -16,14 +16,13 @@ def run_tests():
     dp[0][0] = 1
     for i in range(n):
         for j in range(n):
-            if i == 0 and j == 0:
-                continue
-            valx = 0
-            valy = 0
-            if grid[i][j] == '*':
+            if (i == 0 and j == 0) or grid[i][j] == '*':
+                # we also wanna preserve value at dp (0,0)
                 # grid[i][j] = 0
                 # but it is already intialized so eh
                 continue
+            valx = 0
+            valy = 0
             if i > 0:
                 valx = dp[i-1][j]
             if j > 0:
