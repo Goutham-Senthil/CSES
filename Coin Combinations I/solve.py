@@ -6,7 +6,6 @@ input = sys.stdin.readline
 # its TLE
 # but the logic is 100% correct
 
-
 def run_tests():
     MOD = 10**9 + 7
     n,x = map(int,input().split())
