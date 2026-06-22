@@ -34,7 +34,7 @@ def reconstruct_trace(samples: List[Sample]) -> List[str]:
     prev_stack = []
 
 
-    for t,curr_stack in [(s.t, s.stack) for s in samples ]:
+    for t,curr_stack in [(s.t, s.stack) for s in samples]:
         i = 0 
 
 
@@ -61,13 +61,19 @@ def reconstruct_trace(samples: List[Sample]) -> List[str]:
         prev_stack = curr_stack
     
     return events
-                             
-        
 
 
-samples = [
-    Sample(0.0, ["main"]),
-    Sample(1.0, ["main", "foo"]),
-    Sample(2.0, ["main", "foo", "bar","main"]),
-    Sample(3.0, ["main", "baz"]),
-]
+def main():
+    samples = [
+        Sample(0.0, ["main"]),
+        Sample(1.0, ["main", "foo"]),
+        Sample(2.0, ["main", "foo", "bar","main"]),
+        Sample(3.0, ["main", "baz"]),
+    ]
+    events = reconstruct_trace(samples)
+    
+    for ev in events:
+        print(ev)
+
+if __name__ == "__main__":
+    main()
