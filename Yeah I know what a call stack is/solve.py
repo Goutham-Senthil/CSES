@@ -69,6 +69,7 @@ def main():
         Sample(1.0, ["main", "foo"]),
         Sample(2.0, ["main", "foo", "bar","main"]),
         Sample(3.0, ["main", "baz"]),
+        Sample(4.0, ['main2'])
     ]
     events = reconstruct_trace(samples)
     
